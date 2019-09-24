@@ -8,22 +8,18 @@ Gem::Specification.new do |spec|
   spec.authors = ["Dheeraj (DJ) Agrawal"]
   spec.email = ["agrawal.dheeraj.7@gmail.com"]
 
-  spec.summary = "Write a short summary, because RubyGems requires one."
-  spec.description = "Write a longer description or delete this line."
-  spec.homepage = "http://github.com"
+  spec.summary = "A Ruby gem to integrate with Heremaps API"
+  spec.description = "This `ruby gem` provide the functionality to integrate with HERE Maps API, SEARCH (PLACES) AND GEOCODING APIs
+  - ROUTING APIs"
+  spec.homepage = "http://github.com/agrawald/heremaps"
   spec.license = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "Set to 'http://mygemserver.com'"
-
-    spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "http://github.com"
-    spec.metadata["changelog_uri"] = "http://github.com"
+    spec.metadata["allowed_push_host"] = 'https://rubygems.org'
   else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-          "public gem pushes."
+    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   end
 
   # Specify which files should be added to the gem when it is released.

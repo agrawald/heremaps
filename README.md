@@ -11,32 +11,40 @@ APIs Currently Integrated
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem 'heremaps'
+```bash
+cmd> gem 'heremaps'
 ```
 
 And then execute:
 
-    $ bundle
-
+```ruby
+cmd> bundle
+```
 Or install it yourself as:
 
-    $ gem install heremaps
-
+```ruby
+cmd> gem install heremaps
+```
 ## Usage
 
 To initialize the Heremaps library, you must generate the Heremaps APP ID and APP CODE. And set it as shown below
-
-> Heremaps.app_id = "<app_id>"
-> Heremaps.app_code = "<app_code>"
-
+```ruby
+require "heremaps"
+...
+Heremaps.app_id = "<app_id>"
+Heremaps.app_code = "<app_code>"
+```
 ### Calling Heremap API
 
 To use Heremaps under `spec` folder, please refer to RSpec. Following is an example to invoke geocoder API.
 
-> require "heremaps"
->options = { :searchtext => "425 W Randolph Street, Chicago", :gen => 9 }
->res = Heremaps::Geocoder::Geocode.new.get options
+```ruby
+require "heremaps"
+...
+options = { :searchtext => "425 W Randolph Street, Chicago", :gen => 9 }
+res = Heremaps::Geocoder::Geocode.new.get options
+...
+```
 
 ## Development
 

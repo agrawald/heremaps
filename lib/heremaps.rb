@@ -30,6 +30,6 @@ module Heremaps
   require "heremaps/resources/routing/get_routing_zones"
 
   class << self
-    attr_accessor :app_id, :app_code, :env
+    attr_accessor :apiKey, :env, :domain
   end
 end

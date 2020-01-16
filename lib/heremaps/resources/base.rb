@@ -1,11 +1,10 @@
 module Heremaps
   class Base
-    attr_accessor :method_name, :base_url, :test_url, :path
+    attr_accessor :method_name, :base_url, :path
 
     def request_url(format: "json")
       format ||= "json"
-      url = (Heremaps.env == "test") ? test_url : base_url
-      url = File.join(url, path, "#{method_name}.#{format}")
+      url = File.join(base_url, path, "#{method_name}.#{format}")
       url
     end
 
@@ -15,7 +14,7 @@ module Heremaps
     end
 
     def prepare_the_request(options = {})
-      options = options.merge(:app_id => Heremaps.app_id, :app_code => Heremaps.app_code)
+      options = options.merge(:apiKey => Heremaps.apiKey)
       options
     end
 

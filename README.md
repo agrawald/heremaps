@@ -4,8 +4,9 @@ This `ruby gem` provide the functionality to integrate with HERE Maps API, as de
 
 APIs Currently Integrated
 
-- SEARCH (PLACES) AND GEOCODING APIs
-- ROUTING APIs
+- Places REST API
+- GEOCODING REST APIs
+- ROUTING REST APIs
 
 ## Installation
 
@@ -27,12 +28,12 @@ cmd> gem install heremaps
 ```
 ## Usage
 
-To initialize the Heremaps library, you must generate the Heremaps APP ID and APP CODE. And set it as shown below
+To initialize the Heremaps library, you must generate the Heremaps Api Key and domain (for prod and test). And set it as shown below
 ```ruby
 require "heremaps"
 ...
-Heremaps.app_id = "<app_id>"
-Heremaps.app_code = "<app_code>"
+Heremaps.apiKey = "<apiKey>"
+Heremaps.domain = "ls.hereapi.com"
 ```
 ### Calling Heremap API
 

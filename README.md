@@ -33,7 +33,7 @@ To initialize the Heremaps library, you must generate the Heremaps Api Key and d
 require "heremaps"
 ...
 Heremaps.apiKey = "<apiKey>"
-Heremaps.domain = "ls.hereapi.com"
+Heremaps.url_domain = "ls.hereapi.com"
 ```
 ### Calling Heremap API
 

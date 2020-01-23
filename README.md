@@ -32,8 +32,9 @@ To initialize the Heremaps library, you must generate the Heremaps Api Key and d
 ```ruby
 require "heremaps"
 ...
-Heremaps.apiKey = "<apiKey>"
-Heremaps.url_domain = "ls.hereapi.com"
+# By default the API_KEY and DOMAIN will be read from ENVIRONMENT variables. But you can set them as shown below as well
+Heremaps::API_KEY = "<apiKey>"
+Heremaps::DOMAIN = "ls.hereapi.com"
 ```
 ### Calling Heremap API
 

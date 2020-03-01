@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "rest-client"
   spec.add_development_dependency "bundler", "~> 2.1.4"
   spec.add_development_dependency "debase", "~> 0.2.4.1"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.8.0"
   spec.add_development_dependency "ruby-debug-ide", "~> 0.7.0"
   spec.add_development_dependency "solargraph", "~> 0.37.2"

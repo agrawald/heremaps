@@ -28,8 +28,4 @@ module Heremaps
   require "heremaps/resources/routing/calculate_matrix"
   require "heremaps/resources/routing/get_route"
   require "heremaps/resources/routing/get_routing_zones"
-
-  class << self
-    attr_accessor :app_id, :app_code, :env
-  end
 end

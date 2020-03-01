@@ -2,8 +2,7 @@ module Heremaps
   module Places
     class Base < Heremaps::Base
       def request_url
-        url = (Heremaps.env == "test") ? test_url : base_url
-        url = File.join(url, path, method_name.to_s)
+        url = File.join("https://", service + "." + Heremaps::DOMAIN, path, method_name.to_s)
         url
       end
 

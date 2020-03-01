@@ -1,13 +1,11 @@
 module Heremaps
   module Geocoder
     class Geocode < Heremaps::Base
-      BASE_URL = "https://geocoder.api.here.com".freeze
-      TEST_URL = "https://geocoder.cit.api.here.com".freeze
+      SERVICE = "geocoder".freeze
       PATH = "/6.2/".freeze
 
       def initialize
-        @base_url = BASE_URL
-        @test_url = TEST_URL
+        @service = SERVICE
         @path = PATH
         @method_name = "geocode".freeze # getroute as default method.
       end

@@ -1,13 +1,12 @@
 module Heremaps
   module Routing
     class Calculate < Heremaps::Base
-      BASE_URL = "https://route.api.here.com/routing".freeze
-      TEST_URL = "https://route.cit.api.here.com/routing".freeze
-      PATH = "/7.2/".freeze
+      # route.ls.hereapi.com/routing/7.2/calculateroute.json
+      SERVICE = "route".freeze
+      PATH = "/routing/7.2/".freeze
 
       def initialize
-        @base_url = BASE_URL
-        @test_url = TEST_URL
+        @service = SERVICE
         @path = PATH
         @method_name = "calculateroute".freeze # getroute as default method.
       end

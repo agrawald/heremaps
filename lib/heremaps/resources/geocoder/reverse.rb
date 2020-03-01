@@ -1,13 +1,11 @@
 module Heremaps
   module Geocoder
     class Reverse < Heremaps::Base
-      BASE_URL = "https://reverse.geocoder.api.here.com".freeze
-      TEST_URL = "http://reverse.geocoder.cit.api.here.com".freeze
+      SERVICE = "reverse.geocoder".freeze
       PATH = "/6.2/".freeze
 
       def initialize
-        @base_url = BASE_URL
-        @test_url = TEST_URL
+        @service = SERVICE
         @path = PATH
         @method_name = "reversegeocode".freeze # getroute as default method.
       end

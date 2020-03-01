@@ -13,6 +13,6 @@ RSpec.configure do |config|
   end
 
   # Heremaps test credentials
-  Heremaps.app_id = "lMQVHZlRhrxap8XJCNhv"
-  Heremaps.app_code = "OWK5v85adwMuK-drG8fpkQ"
+  Heremaps::API_KEY = ENV["HEREMAPS_API_KEY"] || "OOXqmn-P4rmnAfMP61pBSUIxD5PEVmZB_pSq2YLgs5w".freeze
+  Heremaps::DOMAIN = ENV["HEREMAPS_API_KEY"] || "ls.hereapi.com".freeze
 end
